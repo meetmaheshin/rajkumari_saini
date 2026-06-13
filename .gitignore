@@ -1,0 +1,10 @@
+# redundant source originals (clean copies live in images/)
+WhatsApp Image*.jpeg
+
+# superseded early draft
+rajkumari-saini-website*.html
+
+# tooling / OS
+node_modules/
+.DS_Store
+Thumbs.db
