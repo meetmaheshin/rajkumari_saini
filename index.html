@@ -63,7 +63,7 @@ body::after {
 @keyframes lotusPulse { 0%,100%{transform:scale(1); filter:drop-shadow(0 0 0 rgba(194,155,63,0))} 50%{transform:scale(1.12); filter:drop-shadow(0 6px 18px rgba(194,155,63,.45))} }
 .loader-name {
   font-family:'Noto Serif Devanagari', serif; font-weight:700;
-  font-size:clamp(20px,3vw,28px); color:var(--maroon); letter-spacing:1px;
+  font-size:clamp(20px,3vw,28px); color:var(--maroon); letter-spacing:0;
 }
 .loader-bar { width:160px; height:2px; background:var(--ivory-2); border-radius:2px; overflow:hidden; }
 .loader-bar i { display:block; height:100%; width:40%; background:var(--grad-gold); border-radius:2px; animation:loadSlide 1.1s var(--ease) infinite; }
@@ -109,7 +109,7 @@ nav.scrolled {
 }
 .nav-lotus svg { width:27px; height:27px; }
 .nav-name { font-family:'Noto Serif Devanagari', serif; font-weight:700; font-size:17px; color:var(--maroon); line-height:1.15; }
-.nav-name small { display:block; font-family:'Noto Sans Devanagari'; font-weight:500; font-size:10px; letter-spacing:.3px; color:var(--ink-2); }
+.nav-name small { display:block; font-family:'Noto Sans Devanagari'; font-weight:500; font-size:10.5px; letter-spacing:0; color:var(--ink-2); }
 
 .nav-links { display:flex; gap:6px; list-style:none; }
 .nav-links a {
@@ -197,7 +197,7 @@ nav.scrolled {
   background:rgba(255,253,247,.7); border:1px solid var(--gold-2);
   backdrop-filter:blur(6px);
   border-radius:40px; padding:9px 20px; margin-bottom:30px;
-  font-size:12.5px; font-weight:700; letter-spacing:2.5px; color:var(--green);
+  font-size:12.5px; font-weight:700; letter-spacing:0; color:var(--green);
   box-shadow:0 6px 22px rgba(194,155,63,.18);
 }
 .hero-eyebrow i { font-style:normal; width:8px; height:8px; border-radius:50%; background:var(--gold); animation:dotPulse 2.2s infinite; }
@@ -205,7 +205,7 @@ nav.scrolled {
 
 .hero-shrimati {
   font-family:'Tiro Devanagari Hindi', serif;
-  font-size:clamp(22px,2.4vw,30px); letter-spacing:3px; color:var(--gold);
+  font-size:clamp(22px,2.4vw,30px); letter-spacing:0; color:var(--gold);
 }
 /* .line-mask wrappers intentionally unstyled (no overflow:hidden) —
    Devanagari matras extend beyond the line box and must never be clipped */
@@ -354,8 +354,8 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
 .s-head { max-width:720px; margin:0 auto 36px; text-align:center; }
 .s-kicker {
   display:inline-flex; align-items:center; gap:12px;
-  font-size:12px; font-weight:700; letter-spacing:5px; color:var(--gold);
-  text-transform:uppercase; margin-bottom:18px;
+  font-size:12.5px; font-weight:700; letter-spacing:0; color:var(--gold);
+  margin-bottom:18px;
 }
 .s-kicker::before, .s-kicker::after { content:''; width:42px; height:1px; background:linear-gradient(90deg, transparent, var(--gold)); }
 .s-kicker::after { background:linear-gradient(90deg, var(--gold), transparent); }
@@ -423,7 +423,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
 ═════════════════════════════════════════════════ */
 #parichay .ghost { top:40px; left:-30px; }
 .pg { display:grid; grid-template-columns:1fr 1fr; gap:64px; position:relative; z-index:1; }
-.col-kicker { font-size:11.5px; font-weight:700; letter-spacing:4px; color:var(--gold); margin-bottom:10px; text-transform:uppercase; }
+.col-kicker { font-size:12px; font-weight:700; letter-spacing:0; color:var(--gold); margin-bottom:10px; }
 .col-title { font-family:'Noto Serif Devanagari', serif; font-size:26px; font-weight:900; color:var(--green-2); margin-bottom:30px; }
 
 .tl { position:relative; padding-left:34px; }
@@ -435,7 +435,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
   background:var(--cream); border:2.5px solid var(--gold);
   box-shadow:0 0 0 5px rgba(194,155,63,.15);
 }
-.tl-year { display:inline-block; font-size:11px; font-weight:700; letter-spacing:2.5px; color:var(--maroon); background:var(--gold-soft); border-radius:20px; padding:4px 13px; margin-bottom:10px; }
+.tl-year { display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:0; color:var(--maroon); background:var(--gold-soft); border-radius:20px; padding:4px 13px; margin-bottom:10px; }
 .tl-title { font-family:'Noto Serif Devanagari', serif; font-size:18.5px; font-weight:700; color:var(--ink); margin-bottom:7px; }
 .tl-text { font-size:15px; line-height:1.85; color:var(--ink); font-weight:500; }
 
@@ -479,7 +479,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
 .sc-logo { width:50px; height:50px; border-radius:50%; background:radial-gradient(circle at 50% 30%, var(--gold-2), var(--gold)); display:flex; align-items:center; justify-content:center; font-size:23px; box-shadow:0 8px 22px rgba(0,0,0,.35); }
 .sc-tag { font-size:10px; letter-spacing:4px; color:var(--gold-2); font-weight:700; }
 .sc-name { font-family:'Noto Serif Devanagari', serif; font-size:26px; font-weight:700; line-height:1.4; }
-.sc-sub { font-size:12.5px; letter-spacing:1.5px; color:var(--gold-2); margin-top:7px; }
+.sc-sub { font-size:12.5px; letter-spacing:0; color:var(--gold-2); margin-top:7px; }
 .sc-chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
 .sc-chips span { font-size:11.5px; padding:7px 13px; border-radius:30px; background:rgba(255,255,255,.09); border:1px solid rgba(227,199,126,.4); }
 
@@ -503,7 +503,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
 }
 .brow h4 { font-family:'Noto Serif Devanagari', serif; font-size:17.5px; color:var(--green-2); margin-bottom:6px; }
 .brow p { font-size:14.5px; line-height:1.8; color:var(--ink); font-weight:500; }
-.brow .bt { display:inline-block; margin-top:9px; font-size:10.5px; font-weight:700; letter-spacing:1.5px; color:var(--green); background:rgba(46,92,58,.1); padding:5px 13px; border-radius:20px; }
+.brow .bt { display:inline-block; margin-top:9px; font-size:11px; font-weight:700; letter-spacing:0; color:var(--green); background:rgba(46,92,58,.1); padding:5px 13px; border-radius:20px; }
 
 /* ════════════════════════════════════════════════
    CAMPS  (deep green)
@@ -523,7 +523,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
   background:rgba(255,255,255,.05); backdrop-filter:blur(6px);
   padding:22px 26px; margin-bottom:30px;
 }
-.camp-note b { display:block; font-size:13.5px; color:var(--gold-2); letter-spacing:1px; margin-bottom:9px; }
+.camp-note b { display:block; font-size:13.5px; color:var(--gold-2); letter-spacing:0; margin-bottom:9px; }
 .camp-note p { font-size:14.5px; line-height:1.9; color:rgba(255,255,255,.82); }
 .camp-svcs { display:flex; flex-wrap:wrap; gap:10px; }
 .camp-svcs span {
@@ -541,7 +541,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
 }
 .dquote::before { content:'“'; position:absolute; top:-26px; left:22px; font-family:'Noto Serif Devanagari', serif; font-size:90px; color:var(--gold); line-height:1; }
 .dquote p { font-family:'Tiro Devanagari Hindi', serif; font-style:italic; font-size:17.5px; line-height:1.95; color:var(--gold-2); margin-bottom:12px; }
-.dquote .attr { font-size:12.5px; letter-spacing:2px; color:rgba(255,255,255,.6); }
+.dquote .attr { font-size:12.5px; letter-spacing:0; color:rgba(255,255,255,.6); }
 
 /* ════════════════════════════════════════════════
    SEVA GRID
@@ -563,7 +563,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
 .scard:hover .ic { transform:scale(1.18) rotate(-6deg); }
 .scard h4 { font-family:'Noto Serif Devanagari', serif; font-size:18.5px; color:var(--maroon); margin-bottom:9px; }
 .scard p { font-size:14.5px; line-height:1.8; color:var(--ink); font-weight:500; margin-bottom:14px; }
-.scard .tag { font-size:10.5px; font-weight:700; letter-spacing:1.5px; color:var(--green); background:rgba(46,92,58,.1); padding:5px 14px; border-radius:20px; }
+.scard .tag { font-size:11px; font-weight:700; letter-spacing:0; color:var(--green); background:rgba(46,92,58,.1); padding:5px 14px; border-radius:20px; }
 
 /* ════════════════════════════════════════════════
    GALLERY MARQUEE
@@ -623,7 +623,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
 }
 .ccard:hover { transform:translateY(-7px); background:rgba(255,255,255,.12); }
 .ccard .ic { font-size:30px; margin-bottom:12px; }
-.ccard .lb { font-size:10.5px; letter-spacing:3px; font-weight:700; color:var(--gold-2); text-transform:uppercase; margin-bottom:8px; }
+.ccard .lb { font-size:11px; letter-spacing:0; font-weight:700; color:var(--gold-2); margin-bottom:8px; }
 .ccard .vl { font-size:17px; font-weight:700; color:#fff; }
 
 .mega-cta {
@@ -644,7 +644,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
 }
 .mega-cta::after { animation-delay:1.3s; }
 @keyframes ring { 0%{transform:scale(1); opacity:.9} 100%{transform:scale(1.45); opacity:0} }
-.cta-note { margin-top:26px; font-size:12.5px; color:rgba(255,255,255,.65); letter-spacing:.5px; }
+.cta-note { margin-top:26px; font-size:12.5px; color:rgba(255,255,255,.65); letter-spacing:0; }
 
 /* ════════════════════════════════════════════════
    FOOTER
@@ -659,7 +659,7 @@ footer { position:relative; background:var(--green-3); color:rgba(255,255,255,.7
 }
 .f-top { position:relative; z-index:1; display:flex; justify-content:space-between; align-items:flex-start; gap:40px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid rgba(227,199,126,.25); }
 .f-brand { font-family:'Noto Serif Devanagari', serif; font-size:24px; font-weight:700; color:var(--gold-2); }
-.f-brand small { display:block; font-family:'Noto Sans Devanagari'; font-weight:400; font-size:12.5px; color:rgba(255,255,255,.55); margin-top:8px; letter-spacing:1px; line-height:1.8; }
+.f-brand small { display:block; font-family:'Noto Sans Devanagari'; font-weight:400; font-size:12.5px; color:rgba(255,255,255,.55); margin-top:8px; letter-spacing:0; line-height:1.8; }
 .f-links { display:flex; gap:26px; flex-wrap:wrap; }
 .f-links a { color:rgba(255,255,255,.75); text-decoration:none; font-size:13.5px; transition:color .25s; }
 .f-links a:hover { color:var(--gold-2); }
