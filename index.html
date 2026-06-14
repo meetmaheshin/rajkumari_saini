@@ -401,15 +401,16 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
 }
 .pillar:hover { transform:translateY(-10px); box-shadow:0 34px 70px rgba(50,35,15,.13); }
 .pillar:hover::before { transform:scale(1.6); }
+.pillar-head { display:flex; align-items:center; gap:16px; margin-bottom:16px; }
 .pillar-ic {
-  width:72px; height:72px; border-radius:22px; margin-bottom:24px;
+  width:60px; height:60px; flex:none; border-radius:18px;
   background:radial-gradient(circle at 50% 30%, var(--gold-2), var(--gold));
-  display:flex; align-items:center; justify-content:center; font-size:32px;
+  display:flex; align-items:center; justify-content:center; font-size:28px;
   box-shadow:0 10px 26px rgba(194,155,63,.4);
   transition:transform .5s var(--ease);
 }
 .pillar:hover .pillar-ic { transform:rotate(-8deg) scale(1.08); }
-.pillar h3 { font-family:'Noto Serif Devanagari', serif; font-size:25px; font-weight:700; color:var(--green-3); margin-bottom:12px; }
+.pillar h3 { font-family:'Noto Serif Devanagari', serif; font-size:23px; font-weight:700; color:var(--green-3); line-height:1.3; }
 .pillar p { font-size:16px; line-height:1.85; color:var(--ink); font-weight:500; }
 .pillar .n {
   position:absolute; right:22px; bottom:10px;
@@ -781,20 +782,26 @@ footer { position:relative; background:var(--green-3); color:rgba(255,255,255,.7
     </div>
     <div class="pillars-grid">
       <div class="pillar" data-r>
-        <div class="pillar-ic">🤝</div>
-        <h3>सभी के लिए सम्मान</h3>
+        <div class="pillar-head">
+          <div class="pillar-ic">🤝</div>
+          <h3>सभी के लिए सम्मान</h3>
+        </div>
         <p>हर जाति, हर धर्म — एक साथ। माताजी सबके साथ खड़ी रहती हैं, कोई भेदभाव नहीं।</p>
         <span class="n">01</span>
       </div>
       <div class="pillar" data-r>
-        <div class="pillar-ic">💚</div>
-        <h3>ज़रूरत पर तुरंत सहायता</h3>
+        <div class="pillar-head">
+          <div class="pillar-ic">💚</div>
+          <h3>ज़रूरत पर तुरंत सहायता</h3>
+        </div>
         <p>स्वास्थ्य, शिक्षा, आपदा या मदद — जब भी ज़रूरत हो, माताजी की टीम साथ है।</p>
         <span class="n">02</span>
       </div>
       <div class="pillar" data-r>
-        <div class="pillar-ic">🌿</div>
-        <h3>सेवा, समर्पण, समाधान</h3>
+        <div class="pillar-head">
+          <div class="pillar-ic">🌿</div>
+          <h3>सेवा, समर्पण, समाधान</h3>
+        </div>
         <p>गाँव के विकास की सच्ची पहचान — बातें नहीं, ज़मीन पर दिखने वाला काम।</p>
         <span class="n">03</span>
       </div>
