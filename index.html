@@ -376,7 +376,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
   position:absolute; z-index:0; pointer-events:none; user-select:none;
   font-family:'Noto Serif Devanagari', serif; font-weight:900;
   font-size:clamp(120px,20vw,300px); line-height:1;
-  color:transparent; -webkit-text-stroke:1px rgba(194,155,63,.22);
+  color:rgba(194,155,63,.07);
   white-space:nowrap;
 }
 
@@ -384,7 +384,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
    PILLARS
 ═════════════════════════════════════════════════ */
 .pillars { background:transparent; padding-top:48px; }
-.pillars-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+.pillars-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
 .pillar {
   position:relative; border-radius:24px; padding:42px 32px 38px;
   background:linear-gradient(var(--cream),var(--cream)) padding-box,
@@ -454,7 +454,7 @@ section.deep { background:linear-gradient(175deg, var(--green-2), var(--green-3)
 /* ════════════════════════════════════════════════
    KAVACH
 ═════════════════════════════════════════════════ */
-#kavach .ghost { bottom:30px; right:-20px; -webkit-text-stroke-color:rgba(119,30,43,.12); }
+#kavach .ghost { bottom:30px; right:-20px; color:rgba(119,30,43,.06); }
 .kg { display:grid; grid-template-columns:.92fr 1.08fr; gap:70px; align-items:start; position:relative; z-index:1; }
 
 .card-stage { perspective:1100px; }
@@ -654,7 +654,7 @@ footer { position:relative; background:var(--green-3); color:rgba(255,255,255,.7
   position:absolute; left:50%; bottom:-34px; transform:translateX(-50%);
   font-family:'Noto Serif Devanagari', serif; font-weight:900;
   font-size:clamp(70px,11vw,160px); white-space:nowrap; line-height:1;
-  color:transparent; -webkit-text-stroke:1px rgba(227,199,126,.14);
+  color:rgba(227,199,126,.08);
   pointer-events:none;
 }
 .f-top { position:relative; z-index:1; display:flex; justify-content:space-between; align-items:flex-start; gap:40px; flex-wrap:wrap; padding-bottom:44px; border-bottom:1px solid rgba(227,199,126,.25); }
@@ -782,32 +782,40 @@ footer { position:relative; background:var(--green-3); color:rgba(255,255,255,.7
   <div class="wrap">
     <div class="s-head" data-r>
       <div class="s-kicker">हमारा संकल्प</div>
-      <h2 class="s-title">तीन वादे — <span class="gx">हर घर के लिए</span></h2>
+      <h2 class="s-title">चार वादे — <span class="gx">हर घर के लिए</span></h2>
     </div>
     <div class="pillars-grid">
       <div class="pillar" data-r>
         <div class="pillar-head">
-          <div class="pillar-ic">🤝</div>
-          <h3>सभी के लिए सम्मान</h3>
+          <div class="pillar-ic">🩺</div>
+          <h3>स्वास्थ्य सुरक्षा</h3>
         </div>
-        <p>हर जाति, हर धर्म — एक साथ। माताजी सबके साथ खड़ी रहती हैं, कोई भेदभाव नहीं।</p>
+        <p>स्वस्थ परिवार, सशक्त समाज, उज्ज्वल भविष्य।</p>
         <span class="n">01</span>
       </div>
       <div class="pillar" data-r>
         <div class="pillar-head">
-          <div class="pillar-ic">💚</div>
-          <h3>ज़रूरत पर तुरंत सहायता</h3>
+          <div class="pillar-ic">📈</div>
+          <h3>सशक्तिकरण</h3>
         </div>
-        <p>स्वास्थ्य, शिक्षा, आपदा या मदद — जब भी ज़रूरत हो, माताजी की टीम साथ है।</p>
+        <p>कौशल विकास से आत्मनिर्भरता, आत्मनिर्भरता से सम्मान।</p>
         <span class="n">02</span>
       </div>
       <div class="pillar" data-r>
         <div class="pillar-head">
-          <div class="pillar-ic">🌿</div>
-          <h3>सेवा, समर्पण, समाधान</h3>
+          <div class="pillar-ic">🏛️</div>
+          <h3>सुविधा</h3>
         </div>
-        <p>गाँव के विकास की सच्ची पहचान — बातें नहीं, ज़मीन पर दिखने वाला काम।</p>
+        <p>पारदर्शी व्यवस्था, सुलभ सुविधाएँ, सशक्त शासन।</p>
         <span class="n">03</span>
+      </div>
+      <div class="pillar" data-r>
+        <div class="pillar-head">
+          <div class="pillar-ic">📖</div>
+          <h3>शिक्षा</h3>
+        </div>
+        <p>शिक्षा से ज्ञान, ज्ञान से सम्मान, सम्मान से उन्नति।</p>
+        <span class="n">04</span>
       </div>
     </div>
   </div>
